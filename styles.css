@@ -24,7 +24,7 @@ header {
   width: 100%;
   height: 70px;
   color: black;
-  background-color: var(--main-color1);
+  background-color: var(--main-color2);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,7 +57,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: grey;
+  color: white;
+  font-size: 1.2rem;
 }
 
 .hero {
@@ -70,10 +71,10 @@ header nav ul li a:hover {
   background-image: linear-gradient(
       to right,
       /* rgba(255, 0, 0, 0.5),
-      rgba(0, 255, 0, 0.5) */ rgba(0, 0, 0, 0.7),
+        rgba(0, 255, 0, 0.5) */ rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url(./Images/Hero-Background.jpg);
+    url(./Images/Dhairs-Bag.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 65px;
@@ -83,7 +84,7 @@ header nav ul li a:hover {
 .hero p {
   font-size: 2.5rem;
   font-weight: bold;
-  color: var(--main-color1);
+  color: var(--main-color2);
 }
 
 .hero h1 span,
@@ -164,7 +165,7 @@ header nav ul li a:hover {
 
 .beginning h2 {
   text-align: center;
-  color: var(--main-color1);
+  color: var(--main-color2);
   margin: 1.5rem 0;
 }
 
@@ -172,6 +173,10 @@ header nav ul li a:hover {
   max-width: 700px;
   margin: 0 auto;
   line-height: 2.5rem;
+}
+
+.beginning .text span {
+  font-weight: bold;
 }
 
 .about {
@@ -184,11 +189,11 @@ header nav ul li a:hover {
 .about .content h2 {
   font-size: 2rem;
   margin: 2rem 0;
-  color: var(--main-color1);
+  color: var(--main-color2);
 }
 
 .about .content p {
-  line-height: 1.5rem;
+  line-height: 2.5rem;
   max-width: 80%;
   font-size: 1.2rem;
 }
@@ -221,7 +226,9 @@ header nav ul li a:hover {
 
 .services .content h3 {
   margin-bottom: 1.5rem;
-  color: var(--main-color1);
+  color: var(--main-color2);
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .services .content p {
@@ -232,8 +239,12 @@ header nav ul li a:hover {
   padding: 0 2rem;
 }
 
+.services .content .content-part p {
+  line-height: 2rem;
+}
+
 footer {
-  background-color: var(--main-color1);
+  background-color: var(--main-color2);
   width: 100%;
   padding: 1rem;
   height: 220px;
@@ -326,6 +337,13 @@ footer .contact-links .fa-brands:hover {
   transition-duration: 0.3s;
 }
 
+.open-menu {
+  font-size: 2rem;
+  color: white;
+  display: none;
+  margin-right: 1rem;
+}
+
 /* Mobile Responsive CSS */
 
 @media (max-width: 800px) {
@@ -351,6 +369,20 @@ footer .contact-links .fa-brands:hover {
   footer {
     padding: 1rem 2rem;
   }
+
+  header .main-nav {
+    display: none;
+  }
+
+  .open-menu {
+    display: block;
+  }
+  .beginning {
+    padding: 0 2.5rem;
+  }
+  .services .content h3 {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 550px) {
@@ -374,4 +406,77 @@ footer .contact-links .fa-brands:hover {
   .services .content {
     grid-template-columns: 1fr;
   }
+}
+/* Secondary Navigation for mobile */
+
+.navigation {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.navigation .navigation-content {
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--main-color2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation .navigation-content ul {
+  list-style: none;
+}
+
+.navigation .navigation-content ul li {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  /* for bottom effect */
+  position: relative;
+}
+
+.navigation .navigation-content ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation .navigation-content ul li::after {
+  content: "";
+  background-color: white;
+  height: 2px;
+  width: 0;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transition: 0.5s linear;
+}
+
+.navigation .navigation-content ul li:hover::after {
+  width: 100%;
+}
+
+.navigation .navigation-content .close-btn {
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: 0.5rem;
+  border: 2px solid white;
+  border-radius: 48%;
+}
+
+.navigation .navigation-content .close-btn:hover {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
 }
