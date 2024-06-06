@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dhairs Store</title>
+    <title>Dhairs Beauty Salon</title>
 
     <link
       rel="stylesheet"
@@ -18,26 +18,47 @@
       href="https://fonts.googleapis.com/css2?family=Gotu&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link href="styles.css" rel="stylesheet" />
     <script src="index.js" defer></script>
   </head>
   <body>
     <header>
       <div class="logo">DHairs</div>
-      <nav>
+      <nav class="main-nav">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">services</a></li>
           <li><a href="#contact" class="contact-btn">Contact</a></li>
-          <li><a href=""></a></li>
         </ul>
       </nav>
+      <div class="open-menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </header>
-    <div class="hero" id="home">
+    <div class="navigation hide">
+      <div class="navigation-content">
+        <div class="close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#contact" class="contact-btn">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="hero animate__animated animate__backInDown" id="home">
       <h1>
         Unleash Your Inner Beauty
-        <span>Transform your look with our expert stylists.</span>
+        <span>Transform your look with the perfect wig.</span>
       </h1>
       <p>
         Elevate Your Style
@@ -60,59 +81,65 @@
         <button type="submit">Contact Me</button>
       </form>
     </div>
-    <div class="beginning">
+    <div class="beginning animate__animated addEffect">
       <h2>Welcome to Dhairs Beauty Salon</h2>
       <div class="text">
         Hey Pretty 🎀 and Handsome 👔, We are thrilled to have you visit Dhairs
         Beauty Salon, where your hair dreams come to life! With over 4 years in
         the business, we pride ourselves on providing affordable, high-quality
         hair products that cater to all your styling needs. Whether you’re
-        looking for <span>single drawn, </span><span>double drawn, </span
-        ><span>super double drawn, </span>or
-        <span> bonestraight hair, </span> we've got you covered. Our extensive
+        looking for <span>Virgin, </span><span>Raw Donor or </span
+        ><span>Bone Straight Hairs</span> we've got you covered. Our extensive
         range includes straight, wavy, bouncy, curly, pixie styles, and lengths
         from short to medium to long.
       </div>
     </div>
-    <div class="about" id="about">
+    <div class="about animate__animated addEffect" id="about">
       <div class="content">
         <h2>Your Classic Lagos Hair Vendor</h2>
         <p>
-          over 5 years of professional experience, we are proudly serving the
-          women of Nigeria and helping them improve their lives through a
-          variety of wigs and other hair services.
+          with over 4 years of professional experience, we are proudly serving
+          the women of Nigeria and helping them improve their lives through a
+          variety of hair extension and other hair services.
         </p>
       </div>
       <div class="image">
         <img src="./Images/Salon.jpg" alt="Salon Background" />
       </div>
     </div>
-    <div class="services" id="services">
+    <div class="services animate__animated addEffect" id="services">
       <p>
         At Dhairs Beauty Salon, we believe in celebrating the unique beauty of
         every individual. Our mission is to empower you to express yourself
-        through our exquisite hair collections. Here’s what sets us apart from
+        through our exquisite hair collections. Here's what sets us apart from
         the rest:
       </p>
       <div class="content">
-        <div class="content-part">
+        <div class="content-part animate__animated addEffect">
           <h3>Exclusive Collections</h3>
-          We offer limited edition hair pieces and bundles that you won't find
-          anywhere else. Each collection is curated to reflect the latest trends
-          and timeless classics, ensuring you always have the best options.
+          <p>
+            We offer limited edition hair pieces and bundles that you won't find
+            anywhere else. Each collection is curated to reflect the latest
+            trends and timeless classics, ensuring you always have the best
+            options.
+          </p>
         </div>
-        <div class="content-part">
+        <div class="content-part animate__animated addEffect">
           <h3>Custom Wig Services</h3>
-          Not only do we sell wigs, but we also provide bespoke wig-making
-          services. Bring your vision to life with a custom wig tailored to your
-          exact specifications, ensuring a perfect fit and style.
+          <p>
+            Not only do we sell wigs, but we also provide bespoke wig-making
+            services. Bring your vision to life with a custom wig tailored to
+            your exact specifications, ensuring a perfect fit and style.
+          </p>
         </div>
-        <div class="content-part">
+        <div class="content-part animate__animated addEffect">
           <h3>Swift Delivery & Pick-Up Options</h3>
-          Enjoy swift delivery or convenient pick-up options to suit your needs.
-          We guarantee no scams, just seamless service every time.
+          <p>
+            Enjoy swift delivery or convenient pick-up options to suit your
+            needs. We guarantee no scams, just seamless service every time.
+          </p>
         </div>
-        <div class="content-part">
+        <div class="content-part animate__animated addEffect">
           <h3>Hair Care Education</h3>
           We’re not just about selling products; we’re about educating our
           clients. Our website features an extensive library of tutorials, care
