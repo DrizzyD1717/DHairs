@@ -112,6 +112,10 @@ header nav ul li a:hover {
   padding: 0.5rem;
 }
 
+.hero form input {
+  max-width: 100%;
+}
+
 .hero form button {
   /* --glow-color: rgb(217, 176, 255);
   --glow-spread-color: rgba(191, 123, 255, 0.781);
@@ -273,6 +277,14 @@ footer {
 
 footer .contact-links {
   margin-top: 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .contact-links div {
+  margin-right: 0.5rem;
 }
 
 footer .contact-links .fa-brands {
@@ -325,7 +337,8 @@ footer .contact-links .fa-brands:hover {
   width: 140px;
   border-radius: 50px;
   transition-duration: 0.3s;
-  background-color: rgb(181, 160, 255);
+  background-color: #dac0a3;
+  /* background-color: rgb(181, 160, 255); */
   align-items: center;
 }
 
